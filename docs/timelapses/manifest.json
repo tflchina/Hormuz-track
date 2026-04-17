@@ -1,0 +1,8 @@
+{
+  "updated_at_utc": "1970-01-01T00:00:00Z",
+  "timelapses": {
+    "12": "timelapses/hormuz_12h.gif",
+    "24": "timelapses/hormuz_24h.gif",
+    "48": "timelapses/hormuz_48h.gif"
+  }
+}
