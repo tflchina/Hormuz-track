@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hormuz Ship Timelapse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>Strait of Hormuz Ship Timelapse</h1>
+        <p>
+          Hour-by-hour AIS vessel movement timelapses for the latest 12, 24, and 48 hours.
+        </p>
+        <p class="meta">Last updated: <span id="updatedAt">loading...</span></p>
+      </header>
+
+      <section class="controls" aria-label="Timelapse window selector">
+        <button class="window-btn active" data-window="12">12 hours</button>
+        <button class="window-btn" data-window="24">24 hours</button>
+        <button class="window-btn" data-window="48">48 hours</button>
+      </section>
+
+      <section class="viewer">
+        <figure>
+          <img
+            id="timelapseImage"
+            alt="AIS vessel timelapse near Strait of Hormuz"
+            src=""
+          />
+          <figcaption id="caption">Loading timelapse...</figcaption>
+        </figure>
+      </section>
+
+      <section class="notes">
+        <h2>Publishing on GitHub Pages</h2>
+        <ol>
+          <li>Generate latest GIFs into <code>docs/timelapses/</code>.</li>
+          <li>Update <code>docs/timelapses/manifest.json</code> with file names and update time.</li>
+          <li>Push to GitHub and enable Pages from the <code>/docs</code> folder.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
